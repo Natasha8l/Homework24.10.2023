@@ -1,12 +1,11 @@
-m=0
-e=0
-def Srzn():
-  l = float(input())
-  e+=1
-  while l!=0:
-    m+=l
-    l = float(input())
-    e+=1
-  m=m:e
-  return m
-Srzn()
+def averag(*args):
+    total = 0
+    count = 0
+    for arg in args:
+        if type(arg) in (int, float):
+            total += arg
+            count += 1
+    if count == 0:
+        return 0
+    return total / count
+print(averag(10, 20, 35, 46, 57))

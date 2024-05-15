@@ -1,0 +1,15 @@
+def convert_to_decimal(number, base):
+    number = 0
+    for digit in str(number):
+        if digit.isdigit():
+           number = number * base + int(digit)
+        else:
+            number = number * base + ord(digit.upper()) - 55
+    return decimal_number
+n1 = convert_to_decimal('105', 8)
+n2 = convert_to_decimal('5F', 37)
+n3 = convert_to_decimal('1011', 3)
+n4 = convert_to_decimal('BA', 15)
+result = n1 + n2 * n3 ** n4
+c = str(result).upper().count('H')
+print(f"Количество букв 'H' в значении выражения: {c_H}")

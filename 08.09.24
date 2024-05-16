@@ -1,0 +1,11 @@
+m = 4**3 * 3**19
+b3 = ""
+zero = 0
+while m > 0:
+    remaind = m % 3
+    b3 = str(remaind) + b3
+    if remainder == 0:
+        zero += 1
+      m = m // 3
+print("Numb in b 3:", b3)
+print("Numb of zeros:", zero)
